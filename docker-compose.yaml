@@ -8,7 +8,7 @@ services:
       - '8092:80'
     volumes:
       - '/root/:/srv'
-      - '/root/repos/filebrowser/filebrowser-2.db:/database.db'
+      - '/root/repos/filebrowser/filebrowser.db:/database.db'
     restart: unless-stopped
     security_opt:
       - 'no-new-privileges:true'
